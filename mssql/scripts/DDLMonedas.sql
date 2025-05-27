@@ -8,8 +8,10 @@ GO
 CREATE TABLE Moneda( 
 	Id int IDENTITY(1,1) NOT NULL, 
 	CONSTRAINT pkMoneda_Id PRIMARY KEY (Id),
-	Moneda varchar(50) NOT NULL,
-	Sigla varchar(5) NOT NULL,
+	Moneda nvarchar(100) NOT NULL,
+	Sigla nvarchar(5) NOT NULL,
+	Simbolo nvarchar(5) NULL,
+	Emisor nvarchar(100) NULL,
 	Imagen Image NULL
 	)
 
