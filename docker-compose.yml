@@ -1,7 +1,7 @@
 services:
   sqlserver:
     build: ./mssql
-    container_name: dockerbdmonedassqlserverITM
+    container_name: dockerbdfestivos
     ports:
       - 1440:1433
     environment:
